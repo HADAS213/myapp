@@ -4,7 +4,7 @@ export default class ArrImg extends Component {
 
     state = { counter: 0 };
     pic = "/images/";
-    arr = [this.pic + "pic1.jpeg", this.pic + "pic2.jpeg", this.pic + "pic3.jpeg", this.pic + "pic4.jpeg"];
+    arr = [this.pic + "pic1.jpg", this.pic + "pic2.jpg", this.pic + "pic3.jpg", this.pic + "pic4.jpg"];
     picture=this.arr[0];
 
 
