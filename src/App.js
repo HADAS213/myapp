@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import AppAll from './comp/appAll';
+import AppHw from './comp/appHW';
 
 function App() {
   return (
     <div >
-      <AppAll/>
+      <AppHw/>
     </div>
   );
 }
