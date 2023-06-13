@@ -2,24 +2,21 @@ import React, { useState } from 'react'
 
 export default function Color() {
 
-    // const[color,setColor]=useState("silver");
-    const inputRef = useRef;
-    inputRef = React.createRef()
-
-    const changeColor = () => {
-        // current-> כדי לדבר עם האלמנט
-        // console.log(this.inputRef.current.value);
-        let input_val = this.inputRef.current.value;
-        this.setState({ color: input_val });
-        // input_val.style={{color:this.state.color}};
-    }
+    const[color,setColor]=useState("silver");
+    const selectRef = useRef;
 
    
         return (
-            <div>
-                <h2>Enter your favorite color: {this.state.color}</h2>
-                <input onInput={this.changeColor} ref={this.inputRef} type="text" />
-                
+            <div className='container'>
+                <h2 style={{color:color}}>choose your favorite color: {this.state.color}</h2>
+<select defaultValue={gold} ref={selectRef} onChange={()=>{
+    setColor(selectRef.current.value)
+}} className='form-select'>
+    <option value="">select your favorite color</option>
+    <option value={red}>Red</option>
+    <option value={blue}>Blue</option>
+    <option value={green}>Green</option>
+    </select>                
             </div>
         );
     
