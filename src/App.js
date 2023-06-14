@@ -1,12 +1,17 @@
+// import logo from './logo.svg';
 import './App.css';
-import AppDate from './comp/appData';
+import React from 'react';
+import AppHw from './comp_hw/appHw';
+// import AppRoutes from './comps_routes/appRoutes';
+import AppPixa from './comps_pixa/appPixa';
 
 function App() {
   return (
-    <div className="App">
-      <AppDate/>
-      
-    </div>
+    <React.Fragment>
+      {/* <AppRoutes /> */}
+{/* <AppHw/> */}
+<AppPixa/>
+    </React.Fragment>
   );
 }
 
