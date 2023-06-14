@@ -1,9 +1,10 @@
 import './App.css';
+import AppCazino from './comp/appCazino';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <AppCazino/>
     </div>
   );
 }
