@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ArrImg from './arrImg';
 
 export default function CazinoInput() {
 
@@ -15,7 +16,7 @@ export default function CazinoInput() {
             setScore(score-1);
         }
 
-
+        show
     }
 
     return (
